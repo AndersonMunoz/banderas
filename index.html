@@ -8,21 +8,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>¿Donde en el mundo?</h1>
-        <button class="toggle"><i class="fa-regular fa-moon"></i>Modo Oscuro</button>
+    <div class="header">
+        <h1>¿Dónde en el mundo?</h1>
+        <button class="toggle"><i class="fa-regular fa-moon"></i>&nbsp;Modo Oscuro</button>
     </div>
-    <div class="container">
-        <div class="pais">
-            <input type="text" placeholder="Buscar un país...">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="continentes">
-            <div class="lista-continentes">
-                <p>Filtrar por contienente</p>
-                <button><i class="fa-solid fa-chevron-down"></i></button>
+    <div class="supercontainer">
+        
+        <div class="container">
+            <div class="pais">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar un país...">
+            </div>
+            <div class="continentes">
+                <div class="lista-continentes">
+                    <p>Filtrar por contienente</p>&nbsp;
+                    <button class="flecha-abajo"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
             </div>
         </div>
+        <div class="cada-pais">
+            <div class="paises pais1">
+                <div class="bandera"><img class="bandera1" src="img/alemania.svg.png" alt=""></div>
+                <div class="info">
+                    <p class="title">Alemania</p><br>
+                    <p class="subtitle">Población:</p><p>81.770.900</p><br>
+                    <p class="subtitle">Contienente:</p><p>Europa</p><br>
+                    <p class="subtitle">Capital:</p><p>Berlin</p>
+                </div>
+            </div>
+            <div class="paises pais2">2</div>
+            <div class="paises pais3">3</div>
+            <div class="paises pais4">4</div>
+        </div>
     </div>
+    
 </body>
 </html>
