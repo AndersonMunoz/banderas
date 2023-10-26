@@ -17,7 +17,7 @@ body{
     align-items: center;
     justify-content: center;
     grid-template:
-                    "empty-1 container  empty-2" 100px
+                    "empty-1 container  empty-2" 200px
                     "empty-1 cadapais  empty-2" 500px/
                     1fr   1300px        1fr;
 }
@@ -56,7 +56,6 @@ h1{
 
 .container{
     grid-area: container;
-    margin-top: 100px;
     width: 100%;
     padding-top: 30px;
     align-items: center;
@@ -66,24 +65,21 @@ h1{
                     500px        600px;
 }
 
-.pais{
+.pais {
     grid-area: pais;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 20px;
-    margin-top: 20px;
+    width: 100%;
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgb(235, 235, 235);
-    padding: 10px;
+    display: flex;
+    align-items:center ;
 }
 .fa-magnifying-glass{
-    padding: 12px;
     color: rgb(182,182,182);
+    width: 5%;
+    padding: 10px;
 }
 .fa-magnifying-glass:hover{
     cursor: pointer;
+    text-align: center;
 
 }
 input[type="text"] {
@@ -91,6 +87,7 @@ input[type="text"] {
     width: 400px;
     border: none;
     outline: none;
+    padding: 12px;
 }
 
 input[type="text"]:focus {
@@ -104,6 +101,14 @@ input[type="text"]:focus {
     display: flex;
     align-items: center;
     justify-content: right;
+}
+
+.continentes:hover{
+    cursor: pointer;
+}
+
+.lista-continentes-hidden {
+    display: none;
 }
 
 .lista-continentes{
@@ -128,43 +133,26 @@ input[type="text"]:focus {
 }
 
 .cada-pais{
-    margin-top: 110px;
     grid-area: cadapais;
     width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    grid-template:"pais1 empty-1 pais2 empty-2 pais3 empty-3 pais4" 400px/
-                300px 1fr   300px   1fr     300px   1fr     300px;
-}
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px;}
 .paises{
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+    height: auto;
+    width: 80%;
     border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(177, 177, 177);
+    margin-bottom: 50px;
+    padding: 12px;
 }
-.pais1{
-    grid-area: pais1;
-    width: 100%;  
-    border-radius: 10px;
-}
-.pais2{
-    grid-area: pais2;
-    background-color: rgb(109, 48, 48); 
-}
-.pais3{
-    grid-area: pais3;
-    background-color: rgb(87, 75, 75);
-}
-.pais4{
-    grid-area: pais4;
-    background-color: rgb(23, 233, 111); 
+
+.paises:hover {
+    cursor: pointer;
 }
 
 .bandera1{
@@ -173,9 +161,6 @@ input[type="text"]:focus {
     border-top-left-radius: 12px;
 }
 
-.bandera {
-    width: 100%;
-}
 
 .info{
     width: 100%;
@@ -187,8 +172,22 @@ input[type="text"]:focus {
     font-size: 1.1em;
     font-weight: 900;
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 .subtitle{
     font-weight: 900;
 }
+
+.despliegue{
+   display: none;
+}
+
+.despliegue-hidden{
+    width: 240px;
+    position: absolute;
+    top: 150px;
+    padding: 10px;
+    background-color: white;
+     box-shadow: 0px 2px 5px 1px rgb(200, 200, 200);
+ }
